@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Forum - NetGuard</title>
+    <link rel="stylesheet" href="forum_style.css">
+</head>
+<body>
+
+    <!-- Parallax Background -->
+    <div id="parallax-container">
+        <div class="parallax layer" id="background-layer"></div>
+    </div>
+
+    <!-- Logo Section -->
+    <header class="top-section">
+        <a href="main.html" class="logo-container">
+            <img src="assets/netguard_logo.png" alt="NetGuard Logo" class="logo">
+        </a>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+        <a href="open_forum.html">Open Forum</a>
+        <a href="about_us.html">About Us</a>
+        <a href="help.html">Help</a>
+    </nav>
+
+    <!-- Welcome Title -->
+    <div class="welcome-title">
+        <h1>Welcome to the <span class="netguard-glow">Open Forum</span></h1>
+    </div>
+
+    <!-- Forum Container -->
+    <section id="forum-container">
+        <h2 class="forum-heading">Join the Conversation</h2>
+
+        <!-- Post Creation -->
+        <div id="create-post">
+            <textarea id="post-content" placeholder="What's on your mind?"></textarea>
+            <button id="post-button">Post</button>
+        </div>
+
+        <!-- Posts Section -->
+        <div id="posts">
+            <!-- Sample Post -->
+            <div class="post">
+                <div class="post-header">
+                    <h3>Example Post Title</h3>
+                    <span class="post-author">by User123</span>
+                </div>
+                <p class="post-content">This is an example post content. Discuss anything related to online safety and responsibility!</p>
+
+                <!-- Post Actions -->
+                <div class="post-actions">
+                    <button class="upvote">⬆️</button>
+                    <span class="vote-count">12</span>
+                    <button class="downvote">⬇️</button>
+                    <button class="comment-toggle">💬 3 Comments</button>
+                </div>
+
+                <!-- Comments Section -->
+                <div class="comments hidden" style="display: none;">
+                    <div class="comment">
+                        <span class="comment-author">User456:</span>
+                        <p>Great post! Online safety is really important.</p>
+                    </div>
+                    <div class="comment">
+                        <span class="comment-author">User789:</span>
+                        <p>Totally agree! People should be more aware of the risks.</p>
+                    </div>
+                    <div class="comment">
+                        <input type="text" class="comment-input" placeholder="Add a comment...">
+                        <button class="comment-submit">Reply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="forum_script.js"></script>
+    
+</body>
+</html>
